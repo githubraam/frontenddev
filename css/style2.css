@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	min-height: 100vh;
+}
+img{
+	width: auto;
+	height: auto;
+	max-width: 100%;
+}
+.container-fluid{
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.parentWrpr{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+}
+.mainSection{
+	padding-right: 0;
+	padding-left: 0;
+	display: flex;
+	
+	flex-grow: 1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.mainSection .left,
+.mainSection .right{
+	position: relative;
+	overflow: hidden;
+}
+.mainSection .left{
+	flex: 0 0 40%;
+	max-width: 40%;
+	background-color: #081939;
+}
+
+.mainSection .right{
+	flex: 0 0 60%;
+	max-width: 60%;
+	background-color: #020b1e;
+}
+.mainSection.blue .left{
+	background-color: #0231bf;
+}
+.mainSection.blue .right{
+	background-color: #5275dd;
+}
+.mainSection .right .leftTop,
+.mainSection .right .rightTop,
+.mainSection .right .bottomRight,
+.mainSection .right .mobile1,
+.mainSection .right .mobile2{
+	position: absolute;
+}
+.mainSection .right .leftTop{
+	top: -8%;
+	left: 0;
+}
+.mainSection .right .rightTop{
+	right: 5%;
+	top: -20%;
+}
+.mainSection .right .bottomRight{
+	bottom: -10%;
+	right: -2%;
+}
+.mainSection .right .mobile1{
+	left: 5%;
+	bottom: 0;
+	max-width: 250px;
+}
+.mainSection .right .mobile2{
+	right: 18%;
+	top: 10%;
+	max-width: 180px;
+}
